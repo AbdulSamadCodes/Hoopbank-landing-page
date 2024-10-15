@@ -1,11 +1,12 @@
 import { React } from 'react';
+import { Navbar } from '/src/Components/Navbar.jsx'
 
 function App() {
   return (
-    <p className="bg-primary">
-      
-    </p>
+    <div>   
+      <Navbar />
+    </div>
   );
 }
 
-export {App};
+export {App}; 
