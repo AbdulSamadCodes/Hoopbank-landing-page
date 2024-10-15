@@ -9,7 +9,7 @@ import { navLinks } from '/src/Content/content.js';
 
 function MobileNav() {
   return (
-    
+
     <ul className="mobile_nav_list flex 
      flex-col items-center w-[180px] 
      gap-6 px-4 py-5 
@@ -53,7 +53,7 @@ function Navbar() {
         {(navLinks.map((navLink, index, navLinks) => {
           return <li key={navLink.id}
             className={`nav_item
-              ${index === navLinks.length - 1 ? "mr-8" : ""}`}
+              ${index === navLinks.length - 1 ? "mr-10" : ""}`}
           >
             <a href="#" className="nav__link text-white text-sm">{navLink.title}</a>
           </li>
