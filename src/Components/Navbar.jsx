@@ -40,7 +40,7 @@ function Navbar() {
 
     <nav
       className="w-full bg-primary px-4 pt-6 
-      pb-[90px] 
+      pb-[200px] 
       flex items-center justify-between">
       <a href="#" className="logo text-white flex gap-2">
         <img src={hoopbank} alt="Hello" className="w-[30px]" />
@@ -49,13 +49,14 @@ function Navbar() {
 
       <ul
         className="nav__list sm:flex items-center 
-      justify-between gap-10 hidden">
+        justify-between gap-10 hidden">
         {(navLinks.map((navLink, index, navLinks) => {
           return <li key={navLink.id}
             className={`nav_item
               ${index === navLinks.length - 1 ? "mr-10" : ""}`}
           >
-            <a href="#" className="nav__link text-white text-sm">{navLink.title}</a>
+            <a href="#" className="nav__link text-white 
+            text-sm">{navLink.title}</a>
           </li>
         }))}
       </ul>
