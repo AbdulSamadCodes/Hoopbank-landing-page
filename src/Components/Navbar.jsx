@@ -7,40 +7,29 @@ import menu from '../assets/menu.svg';
 
 import { navLinks } from '/src/Content/content.js';
 
-function MobileNav() {
-  return (
-
-    <ul className="mobile_nav_list flex 
-     flex-col items-center w-[180px] 
-     gap-6 px-4 py-5 
-     sm:hidden absolute bg-black-gradient
-     rounded-xl right-7 top-5">
-
-      {(navLinks.map(navLink => {
-        return <li key={navLink.id}>
-          <a href="#"
-            className="nav__link text-white text-sm">
-            {navLink.title}
-          </a>
-        </li>
-      }))}
-    </ul>
-
-  );
-}
-
 function Navbar() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   const toggleMobileNavbar = () => {
-    setIsNavOpen((prevState) => !prevState);
+    setIsMobileNavOpen((prevState) => !prevState);
   };
+
+  const styleClasses = {
+    smallDevicesClasses: ["mobile_nav_list", "flex",
+      "flex-col", "items-center", "w-[180px]",
+      "gap-6", "px-4", "py-5",
+      "sm:hidden", "absolute", "bg-black-gradient",
+      "rounded-xl", "right-7", "top-14"],
+
+    largerDevicesClasses: ["nav__list", "sm:flex", 
+      "items-center","justify-between", 
+      "gap-10", "hidden"]
+  }
 
   return (
 
     <nav
-      className="w-full bg-primary px-4 pt-6 
-      pb-[200px] 
+      className="w-full py-6 
       flex items-center justify-between">
       <a href="#" className="logo text-white flex gap-2">
         <img src={hoopbank} alt="Hello" className="w-[30px]" />
@@ -48,12 +37,15 @@ function Navbar() {
       </a>
 
       <ul
-        className="nav__list sm:flex items-center 
-        justify-between gap-10 hidden">
+        className={`${isMobileNavOpen ?
+          styleClasses.smallDevicesClasses.join(' ') :
+          styleClasses.largerDevicesClasses.join(' ')}`}>
+
         {(navLinks.map((navLink, index, navLinks) => {
           return <li key={navLink.id}
             className={`nav_item
-              ${index === navLinks.length - 1 ? "mr-10" : ""}`}
+              ${index === navLinks.length - 1 && !isMobileNavOpen ?
+                "mr-10" : ""}`}
           >
             <a href="#" className="nav__link text-white 
             text-sm">{navLink.title}</a>
@@ -61,14 +53,10 @@ function Navbar() {
         }))}
       </ul>
 
-      <button className="nav_toggler sm:hidden
-       relative grid"
+      <button className="nav_toggler sm:hidden  grid"
         onClick={toggleMobileNavbar}>
-
-        <img src={isNavOpen ? close : menu} />
-        {isNavOpen ? <MobileNav /> : null}
+        <img src={isMobileNavOpen ? close : menu} />
       </button>
-
     </nav>
 
   );
