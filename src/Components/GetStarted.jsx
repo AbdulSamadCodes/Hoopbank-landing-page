@@ -4,9 +4,9 @@ import arrow_up from '/src/assets/arrow_up.svg';
 function GetStarted() {
   return (
     <button className="get-started-btn bg-blue-gradient p-[2px] 
-      w-[90px] h-[90px]
+      w-[110px] h-[110px] shrink-0
       rounded-full content-center
-      flex items-center gap-3 bg-red overflow-hidden"
+      flex items-center gap-3 bg-red overflow-hidden relative md:-left-[90px]"
     >
       <div className="w-[100%] h-[100%] rounded-full 
        bg-[#050814] flex items-center justify-center">
