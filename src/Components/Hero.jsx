@@ -4,7 +4,7 @@ import { GetStarted } from '/src/Components/GetStarted.jsx';
 import Discount from '/src/assets/Discount.svg';
 import robot from '/src/assets/robot.png';
 
-import { layout, typography } from '/src/styles.js';
+import { styles } from '/src/styles.js';
 
 function HeroContent() {
   return (
@@ -13,14 +13,14 @@ function HeroContent() {
             rounded-md flex items-center gap-3
              text-sm px-4 py-[1.5px] max-w-max">
         <img src={Discount} alt="discount" />
-        <p className="text-gray-400">
+        <p className="text-gray-400"> 
           <span className="text-white">20%</span>{'   '}Discount for{'   '}
           <span className="text-white">1 Month</span>{'   '}Account
         </p>
       </div>
 
       <div className="flex justify-between flex-wrap-reverse md:flex-nowrap gap-3">
-        <h1 className={`hero__title ${typography["hero-title"]}`}>
+        <h1 className={`hero__title ${styles.typography["hero-title"]}`}>
           The Next
           <br />
           <span className="text-gradient">Generation</span>
@@ -31,9 +31,8 @@ function HeroContent() {
         <GetStarted />
       </div>
 
-      <p className="section__text hero__text
-       text-dimWhite max-w-[50ch] text-balance">
-      Our team of experts uses a methodology to identify the credit cards
+      <p className={`${styles.typography["section-text"]}`}>
+        Our team of experts uses a methodology to identify the credit cards
         most likely to fit your needs. We examine annual percentage rates,
         annual fees.
       </p>
@@ -53,10 +52,10 @@ function HeroFigure() {
 
 function Hero() {
   return (
-    <section className={`hero ${layout.section}`}>
-        <HeroContent />
+    <section className={`hero ${styles.layout.section}`}>
+      <HeroContent />
 
-        <HeroFigure />
+      <HeroFigure />
     </section>
   );
 }
