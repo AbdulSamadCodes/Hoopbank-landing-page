@@ -9,17 +9,19 @@ import { styles } from '/src/styles.js';
 function HeroContent() {
   return (
     <div className="w-full md:w-1/2 grid gap-5">
-      <div className="discount bg-discount-gradient
-            rounded-md flex items-center gap-3
-             text-sm px-4 py-[1.5px] max-w-max">
+      <div className={`${styles.utilities.flex["flex-items-center"]} 
+        discount bg-discount-gradient
+        rounded-md  gap-3
+        text-sm px-4 py-[1.5px] max-w-max`}>
         <img src={Discount} alt="discount" />
-        <p className="text-gray-400"> 
+        <p className="text-gray-400">
           <span className="text-white">20%</span>{'   '}Discount for{'   '}
           <span className="text-white">1 Month</span>{'   '}Account
         </p>
       </div>
 
-      <div className="flex justify-between flex-wrap-reverse md:flex-nowrap gap-3">
+      <div className="flex justify-between
+        flex-wrap-reverse md:flex-nowrap gap-3">
         <h1 className={`hero__title ${styles.typography["hero-title"]}`}>
           The Next
           <br />
@@ -42,10 +44,15 @@ function HeroContent() {
 
 function HeroFigure() {
   return (
-    <div className="md:w-1/2 max-w-[80%] ms-auto me-auto">
+    <div className={`md:w-1/2 max-w-[80%]
+         ${styles.utilities.spacings["margin-inline-auto"]} relative`}>
       <figure>
         <img src={robot} />
       </figure>
+
+      {/* gradient start*/}
+      <div className="absolute z-[1] w-[95%] h-[95%] rounded-full  bottom-10 white__gradient" />
+      <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
     </div>
   );
 }
