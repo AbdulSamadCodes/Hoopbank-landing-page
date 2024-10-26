@@ -59,7 +59,7 @@ function HeroFigure() {
 
 function Hero() {
   return (
-    <section className={`hero ${styles.layout.section}`}>
+    <section className={`hero ${styles.layout.section} ${styles.layout.spacings["hero-padding"]}`}>
       <HeroContent />
 
       <HeroFigure />
