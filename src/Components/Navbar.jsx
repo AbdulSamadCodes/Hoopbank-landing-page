@@ -6,7 +6,6 @@ import close from '../assets/close.svg';
 import menu from '../assets/menu.svg';
 
 import { navLinks } from '/src/Content/content.js';
-
 import { styles } from '/src/styles.js';
 
 function Navbar() {
@@ -31,7 +30,7 @@ function Navbar() {
   return (
 
     <nav
-      className="py-6 fixed w-full top-0 left-0 right-0">
+      className="py-6 fixed w-full top-0 left-0 right-0 z-">
         <div className={`${styles.layout["container"]} 
             ${styles.utilities.flex["flex-space-between"]}`}>
           <a href="#" className="logo text-white flex gap-2">

@@ -5,15 +5,16 @@ import { styles } from '/src/styles.js';
 
 function Seperator() {
   return (
-    <div className="seperator w-[2px] h-[20px] bg-white">
+    <div className="seperator w-[2px] h-[20px]
+       bg-white hidden sm:block ">
     </div>
   );
 }
 
 function StatCard({ id, title, value }) {
   return (
-    <li className="sm:flex items-center gap-2" key={id}>
-      <p className="text-white text-[2.2rem] font-bold">
+    <li className="sm:flex items-center gap-2 text-center" key={id}>
+      <p className="text-white text-[2.2rem] font-bold ">
         {value}
       </p>
 
@@ -26,8 +27,9 @@ function StatCard({ id, title, value }) {
 
 function Stats() {
   return (
-    <ul className={`stats  pt-[50px] gap-4 
-      ${styles.utilities.flex["flex-space-between"]}
+    <ul className={`stats  pt-[50px] gap-x-4 gap-y-10
+      grid grid-cols-2 sm:grid-flow-col sm:grid-cols-none  items-center
+      flex-wrap sm:flex-nowrap
       `}>
       {(stats.map((statData, index) => {
         return (
