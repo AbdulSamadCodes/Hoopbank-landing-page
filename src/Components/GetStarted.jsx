@@ -19,8 +19,6 @@ function GetStarted() {
 
           <p class="text-gradient text-sm">Started</p>
         </div>
-
-
       </div>
     </button>
   );

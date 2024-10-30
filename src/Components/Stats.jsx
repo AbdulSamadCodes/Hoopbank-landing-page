@@ -13,7 +13,7 @@ function Seperator() {
 
 function StatCard({ id, title, value }) {
   return (
-    <li className="sm:flex items-center gap-2 text-center" key={id}>
+    <li className={`sm:${styles.utilities.flex["flex-items-center"]} gap-2 text-center`} key={id}>
       <p className="text-white text-[2.2rem] font-bold ">
         {value}
       </p>
@@ -28,8 +28,7 @@ function StatCard({ id, title, value }) {
 function Stats() {
   return (
     <ul className={`stats  pt-[50px] gap-x-4 gap-y-10
-      grid grid-cols-2 sm:grid-flow-col sm:grid-cols-none  items-center
-      flex-wrap sm:flex-nowrap
+      grid grid-cols-2 sm:grid-flow-col sm:grid-cols-none items-center
       `}>
       {(stats.map((statData, index) => {
         return (

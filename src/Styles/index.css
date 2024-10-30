@@ -4,7 +4,7 @@
 
 .bg-black-gradient {
   background: linear-gradient(
-    144.39deg,
+    144.39deg,  
     #ffffff -278.56%,
     #6d6d6d -78.47%,
     #11101d 91.61%
@@ -80,7 +80,7 @@
   transition: transform 400ms ease-in;
 }
 
-.get-started-btn:is(:hover, :focus) .text-gradient {
+.get-started-btn:hover .text-gradient {
   all: unset;
   font-size: 0.875rem;
   color: #ffffff !important;
@@ -88,6 +88,6 @@
   transition: color 250ms ease-in;
 }
 
-.get-started-btn:is(:hover, :focus) > div::before {
+.get-started-btn:hover > div::before {
   transform: scale(1);
 }
