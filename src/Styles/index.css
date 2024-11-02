@@ -77,7 +77,7 @@
   transform: scale(0);
   transform-origin: 20% 90%;
 
-  transition: transform 400ms ease-in;
+  transition: transform 300ms ease-in;
 }
 
 .get-started-btn:hover .text-gradient {
@@ -85,9 +85,13 @@
   font-size: 0.875rem;
   color: #ffffff !important;
 
-  transition: color 250ms ease-in;
+  transition: color 150ms ease-in;
 }
 
 .get-started-btn:hover > div::before {
   transform: scale(1);
+}
+
+.section__text {
+  line-height:1.6;
 }

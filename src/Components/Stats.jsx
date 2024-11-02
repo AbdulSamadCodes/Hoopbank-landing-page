@@ -27,7 +27,7 @@ function StatCard({ id, title, value }) {
 
 function Stats() {
   return (
-    <ul className={`stats  pt-[50px] gap-x-4 gap-y-10
+    <ul className={`stats  pt-[40px] gap-x-4 gap-y-10
       grid grid-cols-2 sm:grid-flow-col sm:grid-cols-none items-center
       `}>
       {(stats.map((statData, index) => {

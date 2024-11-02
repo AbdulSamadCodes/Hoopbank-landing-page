@@ -22,7 +22,7 @@ function HeroContent() {
 
       <div className="flex justify-between
         flex-wrap-reverse md:flex-nowrap gap-3">
-        <h1 className={`hero__title ${styles.typography["hero-title"]}`}>
+        <h1 className={`${styles.typography["hero-title"]}`}>
           The Next
           <br />
           <span className="text-gradient">Generation</span>
@@ -33,7 +33,7 @@ function HeroContent() {
         <GetStarted />
       </div>
 
-      <p className={`${styles.typography["section-text"]}`}>
+      <p className={`${styles.typography["section-text"]} text-balance`}>
         Our team of experts uses a methodology to identify the credit cards
         most likely to fit your needs. We examine annual percentage rates,
         annual fees.
@@ -59,7 +59,8 @@ function HeroFigure() {
 
 function Hero() {
   return (
-    <section className={`hero ${styles.layout.section} ${styles.layout.spacings["hero-padding"]}`}>
+    <section className={`hero ${styles.layout.section}
+       ${styles.layout.spacings["hero-padding"]}`}>
       <HeroContent />
 
       <HeroFigure />

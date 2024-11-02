@@ -9,8 +9,9 @@ const styles = {
   },
 
   typography : {
-    "hero-title":"text-white text-[2rem] xs:text-[2.5rem] md:text-[3rem] md:min-w-max font-bold",
-    "section-text":"section__text hero__text text-dimWhite max-w-[50ch] text-balance"
+    "hero-title":"hero__title text-white text-[2rem] xs:text-[2.6rem] md:text-[3rem] md:min-w-max font-bold",
+    "section-title":"section__title text-white text-[2.2rem] max-w-[20ch] font-bold",
+    "section-text":"section__text hero__text text-dimWhite max-w-[50ch]"
   },
   utilities : {
     "flex" : {
