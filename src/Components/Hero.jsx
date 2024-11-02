@@ -8,7 +8,7 @@ import { styles } from '/src/styles.js';
 
 function HeroContent() {
   return (
-    <div className="w-full md:w-1/2 grid gap-5">
+    <div className="w-full  grid gap-5">
       <div className={`${styles.utilities.flex["flex-items-center"]} 
         discount bg-discount-gradient
         rounded-md  gap-3
@@ -44,8 +44,7 @@ function HeroContent() {
 
 function HeroFigure() {
   return (
-    <div className={`md:w-1/2 max-w-[80%]
-         ${styles.utilities.spacings["margin-inline-auto"]} relative`}>
+    <div className={`max-w-[70%] md:max-w-full ${styles.utilities.spacings["margin-inline-auto"]} relative`}>
       <figure>
         <img src={robot} />
       </figure>

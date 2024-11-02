@@ -1,7 +1,7 @@
 const styles = {
    layout : {
     "container":"w-full max-w-[1100px] px-4 ms-auto me-auto",
-    "section":"section  flex flex-col items-start md:flex-row gap-10",
+    "section":"section grid grid md:grid-cols-2 items-start md:flex-row gap-10",
     "spacings":{
       "hero-padding":"pt-[130px]",
       "section-padding":"pt-[80px]"

@@ -4,7 +4,7 @@ import { styles } from '/src/styles.js';
 
 function FeatureContent() {
   return (
-    <div className="grid gap-y-7 flex-1">
+    <div className="grid gap-y-5">
       <h2 className={`${styles.typography["section-title"]}`}>
         You do the business,
         <br />
