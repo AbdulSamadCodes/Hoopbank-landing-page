@@ -1,10 +1,11 @@
 import { React } from 'react';
 
+import { features } from '/src/Content/content.js';
 import { styles } from '/src/styles.js';
 
 function FeatureContent() {
   return (
-    <div className="grid gap-y-5">
+    <div className="feature__content grid gap-y-5">
       <h2 className={`${styles.typography["section-title"]}`}>
         You do the business,
         <br />
@@ -17,10 +18,32 @@ function FeatureContent() {
         annual fees.
       </p>
 
-      <button className='bg-blue-gradient max-w-max py-3 px-7 rounded-md font-medium'>
+      <button className='btn 
+      bg-blue-gradient max-w-max py-3 
+        px-7 rounded-md font-medium'>
         Get Started
       </button>
     </div>
+  );
+}
+
+function FeatureCard({ icon, title, content }) {
+  return (
+    <li>
+
+    </li>
+  );
+}
+
+function FeaturesList() {
+  return (
+    <ul className="features__list">
+      {(features.map((feature_data) => {
+        const { id, icon, title, content } = feature_data;
+
+        return <FeatureCard key={id} icon={icon} title={title} content={content} />
+      }))}
+    </ul>
   );
 }
 
@@ -31,6 +54,7 @@ function Features() {
       ${styles.layout.spacings["section-padding"]}`} >
 
       <FeatureContent />
+      <FeaturesList />
     </ section>
   );
 }

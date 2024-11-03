@@ -13,7 +13,7 @@ function Seperator() {
 
 function StatCard({ id, title, value }) {
   return (
-    <li className={`sm:${styles.utilities.flex["flex-items-center"]} gap-2 text-center`} key={id}>
+    <li className={`sm:${styles.utilities.flex["flex-items-center"]} gap-2 text-center`}>
       <p className="text-white text-[2.2rem] font-bold ">
         {value}
       </p>
@@ -33,10 +33,10 @@ function Stats() {
       {(stats.map((statData, index) => {
         return (
           <>
-          {index > 0 ? <Seperator /> : null}
-          <StatCard id={statData.id} title={statData.title}
-            value={statData.value}/>
-         </>
+            {index > 0 ? <Seperator /> : null}
+            <StatCard title={statData.title}
+              value={statData.value} />
+          </>
         )
       }))};
     </ul>

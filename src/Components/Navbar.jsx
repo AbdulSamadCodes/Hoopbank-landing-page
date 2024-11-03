@@ -28,37 +28,35 @@ function Navbar() {
   }
 
   return (
-
     <nav
-      className="py-6 fixed w-full top-0 left-0 right-0 z-">
-        <div className={`${styles.layout["container"]} 
+      className="py-6 fixed w-full top-0 left-0 right-0 z-10">
+      <div className={`${styles.layout["container"]} 
             ${styles.utilities.flex["flex-space-between"]}`}>
-          <a href="#" className="logo text-white flex gap-2">
-            <img src={hoopbank} alt="Hello" className="w-[30px]" />
-            <p className="font-semibold">Hoopbank</p>
-          </a>
-          <ul
-            className={`${isMobileNavOpen ?
-              styleClasses.smallDevicesClasses.join(' ') :
-              styleClasses.largerDevicesClasses.join(' ')}`}>
-            {(navLinks.map((navLink, index, navLinks) => {
-              return <li key={navLink.id}
-                className={`nav_item
+        <a href="#" className="logo text-white flex gap-2">
+          <img src={hoopbank} alt="Hello" className="w-[30px]" />
+          <p className="font-semibold">Hoopbank</p>
+        </a>
+        <ul
+          className={`${isMobileNavOpen ?
+            styleClasses.smallDevicesClasses.join(' ') :
+            styleClasses.largerDevicesClasses.join(' ')}`}>
+          {(navLinks.map((navLink, index, navLinks) => {
+            return <li key={navLink.id}
+              className={`nav_item
                   ${index === navLinks.length - 1 && !isMobileNavOpen ?
-                    "mr-10" : ""}`}
-              >
-                <a href="#" className="nav__link text-white
+                  "mr-10" : ""}`}
+            >
+              <a href="#" className="nav__link text-white
                 text-sm">{navLink.title}</a>
-              </li>
-            }))}
-          </ul>
-          <button className="nav_toggler sm:hidden  grid"
-            onClick={toggleMobileNavbar}>
-            <img src={isMobileNavOpen ? close : menu} />
-          </button>
-        </div>
+            </li>
+          }))}
+        </ul>
+        <button className="nav_toggler sm:hidden  grid"
+          onClick={toggleMobileNavbar}>
+          <img src={isMobileNavOpen ? close : menu} />
+        </button>
+      </div>
     </nav>
-
   );
 }
 
