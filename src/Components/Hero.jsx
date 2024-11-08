@@ -44,21 +44,24 @@ function HeroContent() {
 
 function HeroFigure() {
   return (
-    <div className={`max-w-[70%] md:max-w-full ${styles.utilities.spacings["margin-inline-auto"]} relative`}>
+    <div className={`max-w-[70%] md:max-w-full 
+      ${styles.utilities.spacings["margin-inline-auto"]} relative`}>
       <figure>
         <img src={robot} />
       </figure>
 
       {/* gradient start*/}
-      <div className="absolute z-[1] w-[95%] h-[95%] rounded-full  bottom-10 white__gradient" />
-      <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
+      <div className="absolute z-[1] w-[95%] h-[95%] 
+       rounded-full  bottom-10 white__gradient" />
+      <div className="absolute z-[0] w-[50%] h-[50%] 
+       right-20 bottom-20 blue__gradient" />
     </div>
   );
 }
 
 function Hero() {
   return (
-    <section className={`hero ${styles.layout.section}
+    <section id="home" className={`hero ${styles.layout.section}
        ${styles.layout.spacings["hero-padding"]}`}>
       <HeroContent />
 

@@ -19,7 +19,7 @@ function FeatureContent() {
       </p>
 
       <button className='btn 
-      bg-blue-gradient max-w-max py-3 
+        bg-blue-gradient max-w-max py-3 
         px-7 rounded-md font-medium'>
         Get Started
       </button>
@@ -29,15 +29,22 @@ function FeatureContent() {
 
 function FeatureCard({ icon, title, content }) {
   return (
-    <li>
+    <li className={`${styles.utilities.flex["flex-items-center"]} 
+      gap-5 px-8 py-5 rounded-xl hover:bg-dimBlue max-w-max`} >
+      <img src={icon} />
 
+      <div>
+        <h3 className="text-white">{title}</h3>
+        <p className={`${styles.typography["section-text"]}
+          mt-2 text-balance`}>{content}</p>
+      </div>
     </li>
   );
 }
 
 function FeaturesList() {
   return (
-    <ul className="features__list">
+    <ul className="features__list grid gap-6 ">
       {(features.map((feature_data) => {
         const { id, icon, title, content } = feature_data;
 
@@ -47,10 +54,9 @@ function FeaturesList() {
   );
 }
 
-
 function Features() {
   return (
-    <section className={`${styles.layout.section} 
+    <section id="features" className={`${styles.layout.section} 
       ${styles.layout.spacings["section-padding"]}`} >
 
       <FeatureContent />

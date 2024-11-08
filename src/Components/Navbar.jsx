@@ -46,7 +46,7 @@ function Navbar() {
                   ${index === navLinks.length - 1 && !isMobileNavOpen ?
                   "mr-10" : ""}`}
             >
-              <a href="#" className="nav__link text-white
+              <a href={`#${navLink.id}`} className="nav__link text-white
                 text-sm">{navLink.title}</a>
             </li>
           }))}
