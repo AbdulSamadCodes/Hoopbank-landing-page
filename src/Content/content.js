@@ -2,7 +2,6 @@ import star from "/src/assets/Star.svg";
 import shield from "/src/assets/Shield.svg";
 import send from "/src/assets/Send.svg";
 
-
 export const navLinks = [
   {
     id: "home",

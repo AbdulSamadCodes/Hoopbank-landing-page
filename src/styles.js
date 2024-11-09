@@ -4,7 +4,7 @@ const styles = {
     "section": "section grid grid md:grid-cols-2 items-start md:flex-row gap-16",
     "spacings": {
       "hero-padding": "pt-[130px]",
-      "section-padding": "pt-[80px]"
+      "section-padding": "pt-[90px]"
     }
   },
 
