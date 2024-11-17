@@ -44,8 +44,7 @@ function HeroContent() {
 
 function HeroFigure() {
   return (
-    <div className={`max-w-[70%] md:max-w-full 
-      ${styles.utilities.spacings["margin-inline-auto"]} relative`}>
+    <div className={`${styles.utilities.widths["has-figure"]} relative`}>
       <figure>
         <img src={robot} />
       </figure>

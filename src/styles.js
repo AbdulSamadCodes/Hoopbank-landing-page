@@ -1,7 +1,7 @@
 const styles = {
   layout: {
     "container": "w-full max-w-[1100px] px-4 ms-auto me-auto",
-    "section": "section grid grid md:grid-cols-2 items-start md:flex-row gap-16",
+    "section": "section grid grid md:grid-cols-2 items-start  gap-16",
     "spacings": {
       "hero-padding": "pt-[130px]",
       "section-padding": "pt-[90px]"
@@ -11,8 +11,8 @@ const styles = {
   typography: {
     "hero-title": `hero__title text-white text-[2.2rem] xs:text-[2.6rem] 
                     md:text-[3rem] md:min-w-max font-bold`,
-    "section-title": `section__title text-white text-[2rem] xs:text-[2.4rem] 
-                        md:text-[2.5rem] max-w-[25ch] font-bold`,
+    "section-title": `section__title text-white text-[2rem] xs:text-[2.2rem] 
+                      md:text-[2.5rem] max-w-[25ch] font-semibold`,
     "section-text": `section__text hero__text text-dimWhite max-w-[45ch]`
   },
   utilities: {
@@ -22,6 +22,9 @@ const styles = {
     },
     "spacings": {
       "margin-inline-auto": "ms-auto me-auto"
+    },
+    "widths": {
+      "has-figure": "max-w-[75%] sm:max-w-full ms-auto me-auto"
     }
   }
 }
