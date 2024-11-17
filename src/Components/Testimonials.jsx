@@ -23,7 +23,7 @@ function TestimonialsContent() {
 
 function TestimonialCard({ name, content, title, img }) {
   return (
-    <li className="grid gap-8 items-start px-10 py-8 
+    <li className="grid gap-8 items-start px-10 py-6
       rounded-lg hover:bg-testi">
       <img src={quotes} width={"30px"} />
 
