@@ -19,7 +19,7 @@ function BillingFigure() {
 function BillingContent() {
   return (
     <div className="billing__content grid gap-y-7">
-      <h2 className={`${styles.typography["section-title"]} text-balance`}>
+      <h2 className={`${styles.typography["section-title"]}`}>
         Easily control your billing & invoicing.
       </h2>
 
@@ -29,13 +29,12 @@ function BillingContent() {
       </p>
 
       <span class="flex gap-10">
-          <img src={apple} />
-          <img src={google} />
+        <img src={apple} />
+        <img src={google} />
       </span>
     </div>
   );
 }
-
 
 function Billing() {
   return (
