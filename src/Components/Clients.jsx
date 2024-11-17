@@ -6,7 +6,7 @@ import { styles } from '/src/styles.js';
 function ClientsList() {
   return (
     <ul className={`${styles.utilities.flex["flex-space-between"]} 
-      gap-6 flex-wrap`}>
+      gap-6 flex-wrap max-w-[800px] ${styles.utilities.spacings["margin-inline-auto"]}`}>
       {(clients.map((client) => {
         const { id, logo } = client;
 

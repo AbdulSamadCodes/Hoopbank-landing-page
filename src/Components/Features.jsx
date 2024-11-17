@@ -48,7 +48,8 @@ function FeaturesList() {
       {(features.map((feature_data) => {
         const { id, icon, title, content } = feature_data;
 
-        return <FeatureCard key={id} icon={icon} title={title} content={content} />
+        return <FeatureCard key={id} icon={icon} title={title}
+          content={content} />
       }))}
     </ul>
   );
