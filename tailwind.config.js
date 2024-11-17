@@ -29,7 +29,7 @@ export default {
         )`
       },
       gridTemplateColumns:{
-        '250':"repeat(3,250px)"
+        '280':"repeat(3,280px)"
       },
       screens: {
         xs: "480px",

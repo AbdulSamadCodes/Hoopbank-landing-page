@@ -12,7 +12,7 @@ function TestimonialsContent() {
         What people are saying about us
       </h2>
 
-      <p className={`${styles.typography["section-text"]}`}>
+      <p className={`${styles.typography["section-text"]} text-balance`}>
         Our clients love the quality and reliability we bring to every
         interaction.From seamless services to exceptional support,
         we consistently strive to exceed expectations.
@@ -47,7 +47,7 @@ function TestimonialCard({ name, content, title, img }) {
 
 function TestimonialsList() {
   return (
-    <ul className="grid gap-6 md:grid-cols-250
+    <ul className="grid gap-6 md:grid-cols-280
       justify-between mt-10">
       {(feedbacks.map((feedback) => {
         const { id, name, content, title, img } = feedback;

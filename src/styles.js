@@ -10,10 +10,10 @@ const styles = {
   },
 
   typography: {
-    "hero-title": `hero__title text-white text-[2.2rem] xs:text-[2.6rem] 
-                    md:text-[3rem] md:min-w-max font-bold`,
-    "section-title": `section__title text-white text-balance text-[1.9rem] xs:text-[2.2rem] 
-                      md:text-[2.3rem] max-w-[25ch] font-semibold`,
+    "hero-title": `hero__title text-white text-[2rem] xs:text-[2.4rem] 
+                    md:text-[2.8rem] md:min-w-max font-bold`,
+    "section-title": `section__title text-white text-balance text-[1.7rem] xs:text-[2rem] 
+                      md:text-[2.2rem] max-w-[25ch] font-semibold`,
     "section-text": `section__text hero__text text-dimWhite max-w-[45ch] text-[0.95rem]`
   },
   utilities: {

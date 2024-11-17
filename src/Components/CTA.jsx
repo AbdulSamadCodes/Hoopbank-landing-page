@@ -18,9 +18,10 @@ function CTAcontent() {
 
 function CTA() {
   return (
-    <section  className={`mt-[40px]  px-7 py-7 flex flex-col gap-5 sm:flex-row 
-      sm:justify-between sm:items-center bg-CTA_gradient rounded-lg`}>
-      <CTAcontent />   
+    <section className={`max-w-[900px] ms-auto me-auto mt-[50px] px-7 py-8 flex 
+      flex-col gap-5 sm:flex-row sm:justify-between sm:items-center 
+      bg-CTA_gradient rounded-lg`}>
+      <CTAcontent />
 
       <button className='btn 
         bg-blue-gradient max-w-max py-3 

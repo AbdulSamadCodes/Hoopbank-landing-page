@@ -7,6 +7,7 @@ import { CardDeal } from '/src/Components/CardDeal.jsx';
 import { Testimonials } from '/src/Components/Testimonials.jsx';
 import { Clients } from '/src/Components/Clients.jsx';
 import { CTA } from '/src/Components/CTA.jsx';
+import { Footer } from '/src/Components/Footer.jsx';
 
 import { styles } from '/src/styles.js';
 
@@ -21,6 +22,7 @@ function Container() {
       <Testimonials />
       <Clients />
       <CTA />
+      <Footer />
     </div>
   );
 }
