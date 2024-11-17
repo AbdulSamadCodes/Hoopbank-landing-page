@@ -15,12 +15,15 @@ export default {
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
       backgroundImage:{
-        testi:`linear-gradient(
+        testi_gradient:`linear-gradient(
           144.39deg,
           #ffffff -278.56%,
           #6d6d6d -78.47%,
           #11101d 91.61%
         )`
+      },
+      gridTemplateColumns:{
+        '280':"repeat(3,280px)"
       },
       screens: {
         xs: "480px",

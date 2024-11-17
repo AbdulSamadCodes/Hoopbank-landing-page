@@ -23,12 +23,12 @@ function TestimonialsContent() {
 
 function TestimonialCard({ name, content, title, img }) {
   return (
-    <li className="grid gap-8 items-start px-10 py-6
-      rounded-lg hover:bg-testi">
-      <img src={quotes} width={"30px"} />
+    <li className="grid gap-8 items-start px-10 py-7
+      rounded-lg hover:bg-testi_gradient ">
+      <img src={quotes} width={"30px"} /  >
 
       <p className={`${styles.typography["section-text"]}
-         max-w-[18ch] text-balance`}>
+         max-w-[17ch] text-balance`}>
         {content}
       </p>
 
@@ -47,7 +47,7 @@ function TestimonialCard({ name, content, title, img }) {
 
 function TestimonialsList() {
   return (
-    <ul className="grid gap-6 sm:grid-flow-col 
+    <ul className="grid gap-6 sm:grid-cols-280
       justify-between mt-10">
       {(feedbacks.map((feedback) => {
         const { id, name, content, title, img } = feedback;
