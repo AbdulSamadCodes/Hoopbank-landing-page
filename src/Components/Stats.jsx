@@ -5,7 +5,7 @@ import { stats } from "/src/Content/content.js"
 
 function StatCard({ title, value }) {
   return (
-    <li className={`md:flex items-center gap-3`}>
+    <li className={`md:flex items-center gap-3 text-center`}>
       <span className="text-white text-[2.2rem] 
         font-bold block">{value}</span>
       <span class="text-gradient text-[1.3rem] 

@@ -43,6 +43,15 @@
   );
 }
 
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
 .blue__gradient {
   background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
   filter: blur(100px);
@@ -97,5 +106,5 @@
 }
 
 .btn:hover {
-  background:#33bbcf;
+  background: #33bbcf;
 }

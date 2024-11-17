@@ -14,6 +14,14 @@ export default {
         dimWhite: "rgba(255, 255, 255, 0.8  )",
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
+      backgroundImage:{
+        testi:`linear-gradient(
+          144.39deg,
+          #ffffff -278.56%,
+          #6d6d6d -78.47%,
+          #11101d 91.61%
+        )`
+      },
       screens: {
         xs: "480px",
         ss: "620px",

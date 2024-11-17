@@ -4,6 +4,7 @@ import { Stats } from '/src/Components/Stats.jsx';
 import { Features } from '/src/Components/Features.jsx';
 import { Billing } from '/src/Components/Billing.jsx';
 import { CardDeal } from '/src/Components/CardDeal.jsx';
+import { Testimonials } from '/src/Components/Testimonials.jsx';
 
 import { styles } from '/src/styles.js';
 
@@ -15,6 +16,7 @@ function Container() {
       <Features />
       <Billing />
       <CardDeal />
+      <Testimonials  />
     </div>
   );
 }

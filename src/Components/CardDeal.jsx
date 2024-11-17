@@ -22,8 +22,8 @@ function DealContent() {
       </h2>
 
       <p className={`${styles.typography["section-text"]}`}>
-        Effortlessly manage your billing and invoicing needs with our intuitive system.
-        Stay organized, save time, and focus on growing your business.
+      Discover exclusive offers and unbeatable deals tailored just for you!
+              Stay organized, save time, and focus on growing your business.
       </p>
 
       <button className='btn 
