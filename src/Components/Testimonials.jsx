@@ -28,7 +28,7 @@ function TestimonialCard({ name, content, title, img }) {
       <img src={quotes} width={"30px"} /  >
 
       <p className={`${styles.typography["section-text"]}
-         max-w-[17ch] text-balance`}>
+         max-w-[16ch] text-balance`}>
         {content}
       </p>
 
@@ -47,7 +47,7 @@ function TestimonialCard({ name, content, title, img }) {
 
 function TestimonialsList() {
   return (
-    <ul className="grid gap-6 sm:grid-cols-280
+    <ul className="grid gap-6 md:grid-cols-250
       justify-between mt-10">
       {(feedbacks.map((feedback) => {
         const { id, name, content, title, img } = feedback;

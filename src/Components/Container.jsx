@@ -6,6 +6,7 @@ import { Billing } from '/src/Components/Billing.jsx';
 import { CardDeal } from '/src/Components/CardDeal.jsx';
 import { Testimonials } from '/src/Components/Testimonials.jsx';
 import { Clients } from '/src/Components/Clients.jsx';
+import { CTA } from '/src/Components/CTA.jsx';
 
 import { styles } from '/src/styles.js';
 
@@ -19,6 +20,7 @@ function Container() {
       <CardDeal />
       <Testimonials />
       <Clients />
+      <CTA />
     </div>
   );
 }

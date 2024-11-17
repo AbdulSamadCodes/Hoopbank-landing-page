@@ -20,10 +20,16 @@ export default {
           #ffffff -278.56%,
           #6d6d6d -78.47%,
           #11101d 91.61%
+        )`,
+        CTA_gradient:`linear-gradient(
+          -168.39deg,
+          #ffffff -278.56%,
+          #6d6d6d -78.47%,
+          #11101d 91.61%
         )`
       },
       gridTemplateColumns:{
-        '280':"repeat(3,280px)"
+        '250':"repeat(3,250px)"
       },
       screens: {
         xs: "480px",
