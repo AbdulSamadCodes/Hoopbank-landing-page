@@ -5,7 +5,7 @@ import { styles } from '/src/styles.js';
 
 function FeatureContent() {
   return (
-    <div className="feature__content grid gap-y-5">
+    <div className={`features__content ${styles.layout["content-section"]}`}>
       <h2 className={`${styles.typography["section-title"]}`}>
         You do the business,
         <br />

@@ -2,6 +2,7 @@ const styles = {
   layout: {
     "container": "w-full max-w-[1100px] px-4 ms-auto me-auto",
     "section": "section grid grid md:grid-cols-2 items-start  gap-16",
+    "content-section":"grid gap-y-5",
     "spacings": {
       "hero-padding": "pt-[130px]",
       "section-padding": "pt-[90px]"

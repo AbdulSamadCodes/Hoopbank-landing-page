@@ -14,10 +14,9 @@ function DealFigure() {
   );
 }
 
-
 function DealContent() {
   return (
-    <div className="deal__content grid gap-y-5">
+    <div className={`deal__content ${styles.layout["content-section"]}`}>
       <h2 className={`${styles.typography["section-title"]}`}>
         Find a better card deal in few easy steps.
       </h2>

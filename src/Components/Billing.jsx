@@ -18,7 +18,7 @@ function BillingFigure() {
 
 function BillingContent() {
   return (
-    <div className="billing__content grid gap-y-7">
+    <div className={`billing__content ${styles.layout["content-section"]}`}>
       <h2 className={`${styles.typography["section-title"]}`}>
         Easily control your billing & invoicing.
       </h2>

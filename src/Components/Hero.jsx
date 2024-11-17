@@ -8,7 +8,7 @@ import { styles } from '/src/styles.js';
 
 function HeroContent() {
   return (
-    <div className="w-full  grid gap-5">
+    <div className={`hero__content ${styles.layout["content-section"]}`}>
       <div className={`${styles.utilities.flex["flex-items-center"]} 
         discount bg-discount-gradient
         rounded-md  gap-3
