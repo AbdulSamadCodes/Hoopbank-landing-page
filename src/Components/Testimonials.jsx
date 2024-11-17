@@ -25,10 +25,10 @@ function TestimonialCard({ name, content, title, img }) {
   return (
     <li className="grid gap-8 items-start px-10 py-7
       rounded-lg hover:bg-testi_gradient ">
-      <img src={quotes} width={"30px"} /  >
+      <img src={quotes} width={"30px"} />
 
       <p className={`${styles.typography["section-text"]}
-         max-w-[16ch] text-balance`}>
+         max-w-[15ch] text-balance`}>
         {content}
       </p>
 
